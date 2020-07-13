@@ -1,0 +1,38 @@
+
+body{
+    /* 容器属性 */
+    /* 
+    display:flex  开启容器布局
+    justify-content: 对齐方式
+    align-items:   排列方式 
+    flex-direction: 容器的方向，默认按(row)
+    flex-wrap:   是否换行(默认是nowrap)
+    */
+
+    /* 项目属性
+    order       自定义排序
+    align-self     自身排列方式
+
+    flex-grow: 默认0,用于决定项目在 
+    有剩余空间的情况下是否放大，默认不放大，
+    注意，即便设置了固定宽度，也会放大。
+    假设默认三个项目中前两个项目都是0，最后一个是1，
+    最后的项目会沾满剩余空间，
+
+    flex-shrink: 取值：默认是1,用于决定项目在空间
+    不足时大家一起等比缩小；注意，即便设置了固定宽度
+    ,也会缩小。但如果某个项目flex-shrink设置为0,即便
+    空间不够，自身也不缩小
+
+    flex-basis: 取值，默认是auto,用于设置项目宽度，默认
+    auto时，项目会保持默认宽度，或者以width为自身的宽度
+    但如果设置了flex-basis,权重会比width属性高，因此
+    会覆盖width属性
+
+            flex
+    取值：默认0 1 auto，flex属性是flex-grow,flex-shrink与flex-basis
+    三个属性的简写，用于定义项目放大，缩小与宽度。该属性有两个快捷键
+    分别是auto(1 1 auto)等分放大缩小,与none(0 0 auto)不放大，但等分缩小
+    */
+    width: 100vh;
+}
